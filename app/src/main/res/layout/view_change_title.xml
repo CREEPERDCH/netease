@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.dxq.netease.view.FitMeasuredGridView
+            android:id="@+id/gv_show_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="5dp"
+            android:listSelector="@color/colorTransparent"
+            android:numColumns="4"
+            android:padding="8dp"
+            android:verticalSpacing="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="right"
+            android:text="长按排序或删除"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLightGray"
+            android:paddingLeft="13dp"
+            android:paddingTop="5dp"
+            android:text="点击添加更多栏目"
+            android:textSize="16sp"/>
+
+        <com.dxq.netease.view.FitMeasuredGridView
+            android:id="@+id/gv_add_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLightGray"
+            android:horizontalSpacing="5dp"
+            android:listSelector="@color/colorTransparent"
+            android:numColumns="4"
+            android:padding="8dp"
+            android:verticalSpacing="5dp"
+            />
+    </LinearLayout>
+</ScrollView>
